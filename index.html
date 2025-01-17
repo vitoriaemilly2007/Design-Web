@@ -7,14 +7,14 @@
     <title>Montagem básica responsiva</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main class="container">
-        <section class="perfil">
-            <div class="Dados-perfil">
+<body class="flex">
+    <main>
+        <section class="container-perfil flex">
+            <div class="Dados-perfil flex">
                 <img src="img/eu 4.jpg" alt="">
                 <div class="dados">
                     <h2>Vitória Emilly</h2>
-                    <p class="perfil-info">Técnica em Informática para Internet</p>
+                    <p>Técnica em Informática para Internet</p>
                 </div>
             </div>
             <div class="bio">
@@ -23,72 +23,101 @@
             </div>
         </section>
 
-        <section class="projetos">
+        <section class="projetos ">
             <h2>Meus projetos publicados</h2>
-            <hr>
-            <div>
-                <figure>
+            <div class="blocos flex">
+
+                <div class="projeto flex">
                     <img src="img/foto.png" alt="">
-                </figure>
-                <small>CCHLA/ UFRN</small>
-                <div>Blog da UFRN</div>
-                <a href="#">Acesse o link</a>
-            </div>
-            <div>
-                <figure>
+                    <div class="card flex">
+                        <small>CCHLA/ UFRN</small>
+                        <div class="descricao">Blog da UFRN</div>
+                        <a href="#" class="azul">Acesse o link</a>
+                    </div>
+                </div>
+
+                <div class="projeto flex">
                     <img src="img/foto 2.png" alt="">
-                </figure>
-                <small>Site das Piscinas</small>
-                <div>Site institucional da Haas Piscinas</div>
-                <a href="#">Acesse o link</a>
-            </div>
-            <div class="amarelo">
-                <figure>
+                    <div class="card flex">
+                        <small>Site das Piscinas</small>
+                        <div class="descricao">Site institucional da Haas Piscinas</div>
+                        <a href="#" class="azul">Acesse o link</a>
+                    </div>
+                </div>
+
+                <div class="projeto flex bloco">
                     <img src="img/foto3.png" alt="">
-                </figure>
-                <small>Site do Econassu</small>
-                <div>Site de evento acadêmico.</div>
-                <a href="#">Acesse o link</a>
-                <a href="#" class="destque">Destaque</a>
-            </div>
-            <div class="amarelo">
-                <figure>
+                    <div class="card flex">
+                        <small>Site do Econassu</small>
+                        <div class="descricao">Site de evento acadêmico.</div>
+                        <div class="links flex">
+                            <a href="#" class="azul">Acesse o link</a>
+                            <a href="#" class="amarelo">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto flex bloco">
                     <img src="img/foto3.png" alt="">
-                </figure>
-                <small>Site do Econassu</small>
-                <div>Site de evento acadêmico.</div>
-                <a href="#">Acesse o link</a>
-                <a href="#" class="destaque">Destaque</a>
-            </div>
-            <figure>
-                <img src="img/foto.png" alt="">
-            </figure>
-            <small>CCHLA/ UFRN</small>
-            <div>Blog da UFRN</div>
-            <a href="#">Acesse o link</a>
-            </div>
-            <div>
-                <figure>
+                    <div class="card flex">
+                        <small>Site do Econassu</small>
+                        <div class="descricao">Site de evento acadêmico.</div>
+                        <div class="links flex">
+                            <a href="#" class="azul">Acesse o link</a>
+                            <a href="#" class="amarelo">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto flex" >
+                    <img src="img/foto.png" alt="">
+                    <div class="card flex">
+                        <small>CCHLA/ UFRN</small>
+                        <div class="descricao">Blog da UFRN</div>
+                        <a href="#" class="azul">Acesse o link</a>
+                    </div>
+                </div> 
+
+                <div class="projeto flex">
                     <img src="img/foto 2.png" alt="">
-                </figure>
-                <small>Site das Piscinas</small>
-                <div>Site institucional da Haas Piscinas</div>
-                <a href="#" class="destque">Acesse o link</a>
-            </div>
-            <div class="amarelo">
-                <figure>
-                    <img src="img/foto4.png" alt="">
-                </figure>
-                <small>Portal do IFRN</small>
-                <div>Montagem completa do novo portal do IFRN.</div>
-                <a href="#">Acesse o link</a>
-                <a href="#" class="destaque">Destaque</a>
+                    <div class="card flex" >
+                        <small>Site das Piscinas</small>
+                        <div class="descricao">Site institucional da Haas Piscinas</div>
+                        <a href="#" class="azul">Acesse o link</a>
+                    </div>
+                </div>
+
+                <div class="projeto flex bloco">
+                    <img src="img/foto3.png" alt="">
+                    <div class="card flex">
+                        <small>Site do Econassu</small>
+                        <div class="descricao">Site de evento acadêmico.</div>
+                        <div class="links flex">
+                            <a href="#" class="azul">Acesse o link</a>
+                            <a href="#" class="amarelo">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto flex bloco">
+                    <img src="img/foto3.png" alt="">
+                    <div class="card flex">
+                        <small>Site do Econassu</small>
+                        <div class="descricao">Site de evento acadêmico.</div>
+                        <div class="links flex">
+                            <a href="#" class="azul">Acesse o link</a>
+                            <a href="#" class="amarelo">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
+
         <footer>
-            <hr>
             <div>Informática para Internet - 2024</div>
         </footer>
+
     </main>
 </body>
 </html>
