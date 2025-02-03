@@ -1,0 +1,9 @@
+header{
+    width: 1460px;
+    height: 100px;
+    flex-shrink: 0;
+    background: #C11616;
+}
+h1{
+    flex-direction: column;
+}
