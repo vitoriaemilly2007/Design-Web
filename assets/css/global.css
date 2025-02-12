@@ -1,5 +1,5 @@
 .container{
-    min-width: 1400px;
+    max-width: 1200px;
 }
 .block{ 
     display: block; 
@@ -13,10 +13,10 @@
 .flex{
     display: flex;
 }
-.flutuar-esquerda{
+.alinhar-esquerda{
     justify-content: start;
 }
-.flutuar-direita{
+.alinhar-direita{
     justify-content: end;
 }
 .centralizar-horizontal{
@@ -32,4 +32,10 @@
 
 .alinhar-extremidades{
     justify-content: space-between;
+}
+.coluna{
+    flex-direction: column;
+}
+.container-menor{
+    max-width: 800px;
 }
