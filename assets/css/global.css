@@ -1,41 +1,61 @@
-.container{
-    max-width: 1200px;
-}
-.block{ 
-    display: block; 
-}
-.inline-block{
-    display: inline-block;
-}
-.gap{
-    gap: 10px;
-}
-.flex{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.flex {
     display: flex;
 }
-.alinhar-esquerda{
-    justify-content: start;
+
+.coluna {
+    flex-direction: column;
 }
-.alinhar-direita{
-    justify-content: end;
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
 }
-.centralizar-horizontal{
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.container-menor {
+    max-width: 800px;
+}
+
+.azul {
+    color:#2648A1 ;
+}
+
+.centralizar {
     justify-content: center;
-}
-.centralizar-vertical{
-    align-items: center;
-}
-.centralizar{
-    justify-content: center;    
     align-items: center;
 }
 
-.alinhar-extremidades{
+.centralizar-horizontal {
+    justify-content: center;
+}
+
+.alinhar-extremidades {
     justify-content: space-between;
 }
-.coluna{
-    flex-direction: column;
+
+.centralizar-vertical {
+    align-items: center;
 }
-.container-menor{
-    max-width: 800px;
+
+.gap {
+    gap: 10px;
+}
+
+.alinhar-direita {
+    text-align: right;
+}
+
+.alinhar-direita-2 {
+    justify-content: flex-end;
 }
