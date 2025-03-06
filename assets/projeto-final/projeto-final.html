@@ -8,54 +8,207 @@
     <link rel="stylesheet" href="projeto-final.css">
     <link rel="stylesheet" href="global.css">
 </head>
-<body class="container">
-    <section>
-        <header>
-            <img src="imagem/logo-awe.png" alt="">
-            <div>
-                <button class="butão-primario">Supender inscrições <img src="imagem/pause-circle.png" alt=""></button>
-                <div class="meu-nome">Emilly <img src="imagem/Vector (1).png" alt=""></div>
+<body class="d-flex flex-column">
+    <header class="d-flex justify-between">
+        <img src="assets/imgs/logo-awe.svg" alt="Logo da AWE">
+        <div class="funcoes d-flex gap-1 align-center">
+            <div class="btn-inscricao d-flex align-center gap-1">
+                <span>Supender inscrições</span>
+                <img src="assets/imgs/pause-circle.svg" alt="">
             </div>
-        </header>
-    </section>
-    <section class="flex centralizar">
-        <div>
-            <h1>SEMADEC AWE 2025</h1>
-            <button>Editar</button>
-            <ul class="menu flex">
-                <li>19/03/2025</li>
-                <li>IFZN</li>
-                <li>Recebendo Inscrições</li>
-            </ul>
+            <div class="user d-flex gap-1 align-center">
+                <div class="avatar">
+                    <picture>
+                        <img src="assets/imgs/image_user.png" alt="imagem do usuário">
+                    </picture>
+                </div>
+                <span class="text-primary fw-700">Clayton</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>            
         </div>
-    </section>
-    <section class="cards flex centralizar">
-        <div class="card flex">
-            <small>inscrições</small>
-            <h2>125.546</h2>
-            <small>35% pendentes</small>
-        </div>
-        <div class="card flex">
-            <small>inscrições</small>
-            <h2>125.546</h2>
-            <small>35% pendentes</small>
-        </div>
-        <div class="card flex">
-            <small>inscrições</small>
-            <h2>125.546</h2>
-            <small>35% pendentes</small>
-        </div>
-    </section>
-    <section class="Funcoes flex centralizar-esquerda">
-        <h3>Funções rápidas</h3>
-        <div class="cards-2">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
+    </header>
+    <main class="d-flex">
+        <aside class="left-sidebar d-flex flex-column justify-between">
+            <div class="menu d-flex flex-column gap-1">
+                <picture>
+                    <img src="assets/imgs/chevron-left.svg" alt="setas para esquerda">
+                </picture>
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/icon.svg" alt="icon">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Dashboard</span>
+                    </div>
+                </button>
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/users.svg" alt="">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Inscrições</span>
+                    </div>
+                </button>
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/report.svg" alt="">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Relatórios</span>
+                    </div>
+                </button>
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/send.svg" alt="icon">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Comunicação</span>
+                    </div>
+                </button>
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/icon_last_menu.svg" alt="icon">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Meus eventos</span>
+                    </div>
+                </button>
+            </div>
+            <div class="menu-down d-flex flex-column gap-1">
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/iconconfig.svg" alt="">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Configurações</span>
+                    </div>
+                </button>
+                <button class="item-menu d-flex">
+                    <div class="container-icon d-flex align-center justify-between">
+                        <img src="assets/imgs/sair.svg" alt="">
+                    </div>
+                    <div class="content-item d-flex align-center">
+                        <span>Sair</span>
+                    </div>
+                </button>
+            </div>
+        </aside>
+        <div class="main-content">
+            <div class="header">
+                <div class="left">
+                    <div class="top">
+                        <h2>SEMADEC AWE 2025</h2> <img src="assets/imgs/external-link.svg" alt="icon external link">
+                    </div>
+                    <div class="bottom">
+                        <div class="calendar item-bottom">
+                            <img src="assets/imgs/calendar.svg" alt="icon calendar">
+                            <span>19/03/2025</span>
+                        </div>
+                        <div class="local item-bottom">
+                            <img src="assets/imgs/map-pin.svg" alt="icon map">
+                            <span>IFZN</span>
+                        </div>
+                        <div class="main-content-inscricao item-bottom">
+                            <img src="assets/imgs/user-check.svg" alt="icon check user">
+                            <span>Recebendo Inscrições</span>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/imgs/edit.svg" alt="icon edit">
+                    <span>Editar</span>
+                </button>
+            </div>
+            <div class="box-cards">
+                <div class="card">
+                    <div class="header">
+                        <div class="title">
+                            <img src="assets/imgs/users.png" alt="">
+                            <span>Inscrições</span>
+                        </div>
+                        <div class="icons-right">
+                            <img src="assets/imgs/external-link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-h1">125.546</h3>
+                        <small>35% pendentes</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="title">
+                            <img src="assets/imgs/percent.png" alt="">
+                            <span>Descontos</span>
+                        </div>
+                        <div class="icons-right">
+                            <img src="assets/imgs/external-link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-h1">145</h3>
+                        <small>30% usados</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <div class="title">
+                            <img src="assets/imgs/dollar-sign.png" alt="">
+                            <span>Movimentação</span>
+                        </div>
+                        <div class="icons-right">
+                            <img src="assets/imgs/eye.png" alt="">
+                            <img src="assets/imgs/external-link.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-h1"><small>R$</small> 1.456.999,00</h3>
+                        <small>+ R$ **** em processamento</small>
+                    </div>
+                </div>
+            </div>
+            <section class="box-funcoes">
+                <div class="title-funcoes">
+                    <h3>Funções</h3> <span> rápidas</span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/file-text.svg" alt="">
+                        </picture>
+                        <small>Relatórios</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/user-plus.svg" alt="">
+                        </picture>
+                        <small>Add Inscrição</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/percent.svg" alt="">
+                        </picture>
+                        <small>Descontos</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/users.svg" alt="">
+                        </picture>
+                        <small>Importar</small>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <img src="assets/imgs/trello.svg" alt="">
+                        </picture>
+                        <small>Cursos</small>
+                    </div>
+                    <div class="item add-item">
+                        <picture>
+                            <img src="assets/imgs/plus-circle.svg" alt="">
+                        </picture>
+                        <small>Mais itens</small>
+                    </div>
+                </div>
+            </section>
 </body>
 </html>
